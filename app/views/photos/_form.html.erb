@@ -22,9 +22,9 @@
     </div>
     <div class="form-group">
       <%= f.label :file_location %>
-      <%= f.file_field :file_location %>
+      <%= f.file_field :file_location, class: "btn btn-file" %>
     </div>
     
-    <%= f.submit 'SEND', :class => 'btn btn-primary' %>
+    <%= f.submit 'SEND', :class => 'btn btn-primary btn-block' %>
   <% end %>
 </div>

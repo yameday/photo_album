@@ -27,7 +27,7 @@ class PhotosController < ApplicationController
 	def update
 		set_photo
 		if @photo.update_attributes(photo_params)
-			redirect_to photo_path(@photo)
+			redirect_to photos_url			
 		else
 			render  :action => :edit
 		end    
